@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.0.1"
+  version: "1.0.2"
   python_min: "3.10"
 
 package:
@@ -10,12 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/n/neo-jax/neo_jax-${{ version }}.tar.gz
-  sha256: 533cc767b294634a19e938e4491c196711ad27de1d19e55baa9b67550d58bf4a
-  patches:
-    - add-license.patch
+  sha256: fa93d08a0642a28bebf7b78aa30ab4316df31eb8ef11f44e98d98d238a1d97e0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
