@@ -11,8 +11,6 @@ package:
 source:
   url: https://pypi.org/packages/source/n/neo-jax/neo_jax-${{ version }}.tar.gz
   sha256: fa93d08a0642a28bebf7b78aa30ab4316df31eb8ef11f44e98d98d238a1d97e0
-  patches:
-    - add-license.patch
 
 build:
   number: 0
